@@ -69,7 +69,7 @@
 			<functions/>
 			<functionBlocks/>
 			<programs>
-				<program name="safety" version="1.0.0" creationDate="1760597863" lastModifiedDate="1760785468" excludeFromBuild="FALSE" excludeFromBuildIfNotDef="">
+				<program name="safety" version="1.0.0" creationDate="1760597863" lastModifiedDate="1760971977" excludeFromBuild="FALSE" excludeFromBuildIfNotDef="">
 					<vars>
 						<localVars>
 							<var name="latch_reset" type="BOOL">
@@ -90,7 +90,6 @@
 								<assignment fromTmpVar="">
 									<input>
 										<and id="12">
-											<contact name="sw_e_stop_user_button" type="Closed" id="0"/>
 											<contact name="sw_e_stop_motor_driver_fault" type="Closed" id="11"/>
 											<contact name="wdg_fault" type="Normal" id="13"/>
 										</and>
@@ -138,7 +137,7 @@
 									</outputs>
 								</assignment>
 							</network>
-							<network label="" id="3" nextID="13" comment="" disabled="false" disableCondition="">
+							<network label="" id="3" nextID="14" comment="" disabled="false" disableCondition="">
 								<assignment fromTmpVar="">
 									<input>
 										<and id="10">
@@ -158,6 +157,7 @@
 												</outputs>
 											</funcBlock>
 											<contact name="hw_e_stop_user_btn" type="Closed" id="9"/>
+											<contact name="sw_e_stop_user_button" type="Closed" id="13"/>
 										</and>
 									</input>
 									<outputs>
@@ -6547,7 +6547,7 @@ END_PROGRAM
 			</src>
 		</aux>
 		<workspace>
-			<root name="rover_safety_controller" nextID="647">
+			<root name="rover_safety_controller" nextID="679">
 				<GlobalVars name="Global_vars" id="2"/>
 				<Pou name="safety" id="119"/>
 				<Pou name="watchdog" id="158" genHidden="false"/>
@@ -6721,9 +6721,9 @@ END_PROGRAM
 void setup()
 {
 	// Configure static IP address
-	IPAddress ip(192, 168, 1, 11);
+	IPAddress ip(192, 168, 88, 11);
 	IPAddress dns(8, 8, 8, 8);
-	IPAddress gateway(192, 168, 1, 1);
+	IPAddress gateway(192, 168, 88, 1);
 	IPAddress subnet(255, 255, 255, 0);
 	// If cable is not connected this will block the start of PLC with about 60s of timeout!
 	Ethernet.begin(ip, dns, gateway, subnet);
