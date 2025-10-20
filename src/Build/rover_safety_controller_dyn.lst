@@ -1,0 +1,139 @@
+***********************************************************************
+*
+*	DYNAMIC LINK AND INDIRECT ALLOCATION LISTING FOR: rover_safety_controller
+*
+***********************************************************************
+
+
+***************************************************
+	 FIRST CODE AREA
+***************************************************
+
+***************************************************
+	 DATABLOCK PATCHES
+***************************************************
+*
+* List of data blocks that will be checked run-time for consistency with
+* their definition available at compile-time
+*
+*
+*	REQUIREMENTS for DATA BLOCK %Q0
+*		Process image: 0
+*		Number of elements: 8
+*		Data size (bytes): 1
+0000	00 02 00 00 08 00 00 00 01 00 00 00 
+
+*
+*	REQUIREMENTS for DATA BLOCK %M60000
+*		Process image: 0
+*		Number of elements: 1
+*		Data size (bytes): 4
+000C	00 00 60 EA 01 00 00 00 04 00 00 00 
+
+*
+*	REQUIREMENTS for DATA BLOCK %I0
+*		Process image: 0
+*		Number of elements: 8
+*		Data size (bytes): 1
+0018	00 01 00 00 08 00 00 00 01 00 00 00 
+
+*
+* List of all references to data allocated on data blocks
+* along with the whole information required by the run-time linker
+*
+*
+*	1 REFERENCE(S) TO 8-BIT VAR AT BYTE #4 OF DATA BLOCK %Q0
+0000	00 00 00 00 04 00 00 00 02 01 01 00 
+
+*		Instruction type: 0x00
+*		Code offset: 0x00000368
+000C	68 03 00 00 
+
+*
+*	1 REFERENCE(S) TO 8-BIT VAR AT BYTE #0 OF DATA BLOCK %I0
+0010	00 00 00 00 00 00 00 00 01 01 01 00 
+
+*		Instruction type: 0x00
+*		Code offset: 0x0000036C
+001C	6C 03 00 00 
+
+*
+*	1 REFERENCE(S) TO 8-BIT VAR AT BYTE #1 OF DATA BLOCK %Q0
+0020	00 00 00 00 01 00 00 00 02 01 01 00 
+
+*		Instruction type: 0x00
+*		Code offset: 0x00000458
+002C	58 04 00 00 
+
+*
+*	2 REFERENCE(S) TO 8-BIT VAR AT BYTE #2 OF DATA BLOCK %Q0
+0030	00 00 00 00 02 00 00 00 02 01 02 00 
+
+*		Instruction type: 0x00
+*		Code offset: 0x00000360
+003C	60 03 00 00 
+
+*		Instruction type: 0x00
+*		Code offset: 0x000007AC
+0040	AC 07 00 00 
+
+*
+*	2 REFERENCE(S) TO 32-BIT VAR AT BYTE #0 OF DATA BLOCK %M60000
+0044	00 00 60 EA 00 00 00 00 00 04 02 00 
+
+*		Instruction type: 0x00
+*		Code offset: 0x000001AC
+0050	AC 01 00 00 
+
+*		Instruction type: 0x00
+*		Code offset: 0x00000218
+0054	18 02 00 00 
+
+*
+*	2 REFERENCE(S) TO 8-BIT VAR AT BYTE #3 OF DATA BLOCK %Q0
+0058	00 00 00 00 03 00 00 00 02 01 02 00 
+
+*		Instruction type: 0x00
+*		Code offset: 0x00000364
+0064	64 03 00 00 
+
+*		Instruction type: 0x00
+*		Code offset: 0x000007B0
+0068	B0 07 00 00 
+
+*
+*	1 REFERENCE(S) TO 8-BIT VAR AT BYTE #0 OF DATA BLOCK %Q0
+006C	00 00 00 00 00 00 00 00 02 01 01 00 
+
+*		Instruction type: 0x00
+*		Code offset: 0x0000035C
+0078	5C 03 00 00 
+
+
+***************************************************
+	 FUNCTION PATCHES
+***************************************************
+
+NAME: sysCfgAO  - NUM: 1
+	 Patch - TYPE: 0x0 - CODE OFFSET: 0x00000724
+
+NAME: sysDBase_SetExtTable  - NUM: 1
+	 Patch - TYPE: 0x0 - CODE OFFSET: 0x000004F0
+
+NAME: sysCfgProgDIO  - NUM: 1
+	 Patch - TYPE: 0x0 - CODE OFFSET: 0x0000072C
+
+NAME: sysCfgProgDIOs  - NUM: 1
+	 Patch - TYPE: 0x0 - CODE OFFSET: 0x00000728
+
+NAME: sysCfgTempProbe  - NUM: 1
+	 Patch - TYPE: 0x0 - CODE OFFSET: 0x00000734
+
+NAME: sysCfgTempProbes  - NUM: 1
+	 Patch - TYPE: 0x0 - CODE OFFSET: 0x00000730
+
+NAME: sysCfgDOs  - NUM: 1
+	 Patch - TYPE: 0x0 - CODE OFFSET: 0x0000071C
+
+NAME: sysCfgAIs  - NUM: 1
+	 Patch - TYPE: 0x0 - CODE OFFSET: 0x00000720
