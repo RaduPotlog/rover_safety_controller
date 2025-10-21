@@ -16,15 +16,23 @@ struct PLCSharedVarsOutput_t
 PLCSharedVarsOutput_t& PLCOut = (PLCSharedVarsOutput_t&)m_PLCSharedVarsOutputBuf;
 
 
-AlPlc AxelPLC(-2076599689);
+AlPlc AxelPLC(-435410793);
 
 // shared variables can be accessed with PLCIn.varname and PLCOut.varname
 
-#line 21 "C:\\Users\\potlo\\Desktop\\rover_safety_controller\\src\\LLSketch\\LLSketch.ino"
+#include <WiFi.h>
+
+char ssid[] = "MikroLAB";    // your network SSID (name)
+char pass[] = "@2wsxdr%5";    // your network password (use for WPA, or use as key for WEP)
+int keyIndex = 0;             // your network key Index number (needed only for WEP)
+
+int status = WL_IDLE_STATUS;
+
+#line 29 "C:\\Users\\potlo\\Desktop\\rover_safety_controller\\src\\LLSketch\\LLSketch.ino"
 void setup();
-#line 34 "C:\\Users\\potlo\\Desktop\\rover_safety_controller\\src\\LLSketch\\LLSketch.ino"
+#line 57 "C:\\Users\\potlo\\Desktop\\rover_safety_controller\\src\\LLSketch\\LLSketch.ino"
 void loop();
-#line 21 "C:\\Users\\potlo\\Desktop\\rover_safety_controller\\src\\LLSketch\\LLSketch.ino"
+#line 29 "C:\\Users\\potlo\\Desktop\\rover_safety_controller\\src\\LLSketch\\LLSketch.ino"
 void setup()
 {
 	// Configure static IP address
@@ -34,6 +42,21 @@ void setup()
 	IPAddress subnet(255, 255, 255, 0);
 	// If cable is not connected this will block the start of PLC with about 60s of timeout!
 	Ethernet.begin(ip, dns, gateway, subnet);
+	
+	status = WiFi.beginAP(ssid,pass);
+    
+    if(status != WL_AP_LISTENING){
+       Serial.println("Creating access point failed");
+      // don't continue
+      while (true);
+    }
+
+    // wait 10 seconds for connection:
+    delay(1000);
+    // start the web server on port 80
+    //server.begin();
+    // you're connected now, so print out the status
+    //printWiFiStatus();
 
 	AxelPLC.Run();
 }

@@ -57,6 +57,11 @@
 						<address type="Q" typeVar="X" index="0" subIndex="4"/>
 						<initValue>false</initValue>
 					</var>
+					<var name="sw_e_stop_latch_status" type="BOOL">
+						<descr>Mapped to modbus</descr>
+						<address type="Q" typeVar="X" index="0" subIndex="5"/>
+						<initValue>false</initValue>
+					</var>
 				</group>
 			</globalVars>
 			<retainVars/>
@@ -69,12 +74,9 @@
 			<functions/>
 			<functionBlocks/>
 			<programs>
-				<program name="safety" version="1.0.0" creationDate="1760597863" lastModifiedDate="1760971977" excludeFromBuild="FALSE" excludeFromBuildIfNotDef="">
+				<program name="safety" version="1.0.0" creationDate="1760597863" lastModifiedDate="1761047976" excludeFromBuild="FALSE" excludeFromBuildIfNotDef="">
 					<vars>
 						<localVars>
-							<var name="latch_reset" type="BOOL">
-								<initValue>false</initValue>
-							</var>
 							<var name="SR" type="SR"/>
 							<var name="RS" type="RS"/>
 							<var name="F_TRGO" type="F_TRIG"/>
@@ -86,12 +88,13 @@
 					<iecDeclaration active="FALSE"/>
 					<sourceCode type="LD2">
 						<LD2 version="1">
-							<network label="" id="1" nextID="14" comment="" disabled="false" disableCondition="">
+							<network label="" id="1" nextID="15" comment="" disabled="false" disableCondition="">
 								<assignment fromTmpVar="">
 									<input>
 										<and id="12">
 											<contact name="sw_e_stop_motor_driver_fault" type="Closed" id="11"/>
 											<contact name="wdg_fault" type="Normal" id="13"/>
+											<contact name="hw_e_stop_user_btn" type="Closed" id="14"/>
 										</and>
 									</input>
 									<outputs>
@@ -133,7 +136,7 @@
 										</funcBlock>
 									</input>
 									<outputs>
-										<coil name="latch_reset" type="Normal" id="1"/>
+										<coil name="sw_e_stop_latch_status" type="Normal" id="1"/>
 									</outputs>
 								</assignment>
 							</network>
@@ -147,7 +150,7 @@
 														<contact name="e_stop" type="Closed" id="0"/>
 													</pin>
 													<pin name="r1" neg="false" type="BOOL">
-														<contact name="latch_reset" type="Normal" id="11"/>
+														<contact name="sw_e_stop_latch_status" type="Normal" id="11"/>
 													</pin>
 												</inputs>
 												<outputs>
@@ -6547,7 +6550,7 @@ END_PROGRAM
 			</src>
 		</aux>
 		<workspace>
-			<root name="rover_safety_controller" nextID="679">
+			<root name="rover_safety_controller" nextID="767">
 				<GlobalVars name="Global_vars" id="2"/>
 				<Pou name="safety" id="119"/>
 				<Pou name="watchdog" id="158" genHidden="false"/>
@@ -6715,8 +6718,16 @@ END_PROGRAM
 					</config>
 					<RS485 protocol="" mode="0" baudRate="38400" serialMode="none,8,1" slaveAddress="1" COMnumber="2" rsmode="1" netId="0" maxSlaves="32" serCfg="1"/>
 					<CANopen id="0" protocol="" mode="0" nodeID="127" baudRate="250000" hbTime="0" syncCOBID="128" syncCycle="0" networkID="0" slaveNodeID="1" slaveDeviceType="301" slaveSyncCOBID="128" slaveSyncCycle="0" slaveManufacturerDeviceName="" slaveManufacturerHardwareVer="" slaveManufacturerSoftwareVer="" slaveGuardTime="200" slaveLifeTimeFactor="3" slaveConsumerHeartbeatTime="0" slaveProducerHeartbeatTime="0" slaveVendorID="0" slaveProductCode="0" slaveRevisionNumber="0" slaveSerialNumber="0" slaveCfgGranularity="8" slaveCfgCOBIDAutoAssignment="1" slaveCfgMaxTPDONum="8" slaveCfgMaxRPDONum="8"/>
-					<Ethernet protocol="ModbusTCP_master" enableMaster="1" enableSlave="1" enableSlaveRtuGateway="0" rtuGatewayDefaultTimeout="100" slavePort="502"/>
+					<Ethernet protocol="" enableMaster="0" enableSlave="1" enableSlaveRtuGateway="0" rtuGatewayDefaultTimeout="100" slavePort="502"/>
 					<SketchContent>// shared variables can be accessed with PLCIn.varname and PLCOut.varname
+
+#include &lt;WiFi.h&gt;
+
+char ssid[] = "MikroLAB";    // your network SSID (name)
+char pass[] = "@2wsxdr%5";    // your network password (use for WPA, or use as key for WEP)
+int keyIndex = 0;             // your network key Index number (needed only for WEP)
+
+int status = WL_IDLE_STATUS;
 
 void setup()
 {
@@ -6727,6 +6738,21 @@ void setup()
 	IPAddress subnet(255, 255, 255, 0);
 	// If cable is not connected this will block the start of PLC with about 60s of timeout!
 	Ethernet.begin(ip, dns, gateway, subnet);
+	
+	status = WiFi.beginAP(ssid,pass);
+    
+    if(status != WL_AP_LISTENING){
+       Serial.println("Creating access point failed");
+      // don't continue
+      while (true);
+    }
+
+    // wait 10 seconds for connection:
+    delay(1000);
+    // start the web server on port 80
+    //server.begin();
+    // you're connected now, so print out the status
+    //printWiFiStatus();
 }
 
 void loop()

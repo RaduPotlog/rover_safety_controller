@@ -46,6 +46,11 @@
   },
   {
     "Sourcefile": "C:\\Users\\potlo\\Desktop\\rover_safety_controller\\src\\LLSketch_build\\sketch\\LLSketch.ino.cpp",
+    "Include": "WiFi.h",
+    "Includepath": "C:\\Users\\potlo\\AppData\\Local\\T\\A\\internal\\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\\libraries\\WiFi\\src"
+  },
+  {
+    "Sourcefile": "C:\\Users\\potlo\\Desktop\\rover_safety_controller\\src\\LLSketch_build\\sketch\\LLSketch.ino.cpp",
     "Include": "",
     "Includepath": null
   },
@@ -141,6 +146,16 @@
   },
   {
     "Sourcefile": "C:\\Users\\potlo\\AppData\\Local\\T\\A\\internal\\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\\libraries\\SocketWrapper\\src\\utility\\http_parser\\http_parser.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\potlo\\AppData\\Local\\T\\A\\internal\\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\\libraries\\WiFi\\src\\WiFi.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\potlo\\AppData\\Local\\T\\A\\internal\\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\\libraries\\WiFi\\src\\WiFiServer.cpp",
     "Include": "",
     "Includepath": null
   }

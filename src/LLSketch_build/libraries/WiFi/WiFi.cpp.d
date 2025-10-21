@@ -1,5 +1,10 @@
-C:\Users\potlo\Desktop\rover_safety_controller\src\LLSketch_build\sketch\LLSketch.ino.cpp.o: \
- C:\Users\potlo\Desktop\rover_safety_controller\src\LLSketch_build\sketch\LLSketch.ino.cpp \
+C:\Users\potlo\Desktop\rover_safety_controller\src\LLSketch_build\libraries\WiFi\WiFi.cpp.o: \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\libraries\WiFi\src\WiFi.cpp \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\libraries\WiFi\src\WiFi.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\libraries\WiFi\src\utility/wl_definitions.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/drivers/wifi/COMPONENT_WHD/wifi-host-driver/inc/whd_version.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\libraries\WiFi\src\utility/wl_types.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\libraries\SocketWrapper\src/SocketHelpers.h \
  C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/Arduino.h \
  C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\variants\PORTENTA_H7_M7/pinmode_arduino.h \
  C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\variants\PORTENTA_H7_M7/mbed_config.h \
@@ -173,49 +178,17 @@ C:\Users\potlo\Desktop\rover_safety_controller\src\LLSketch_build\sketch\LLSketc
  C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/api/HardwareSerial.h \
  C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/timer.h \
  C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/overloads.h \
- C:\Users\potlo\AppData\Local\T\A\internal\AlPlc_PMC_1.0.6_762ba494a9a1f033\AlPlc_PMC\src/AlPlc_PMC.h \
- C:\Users\potlo\AppData\Local\T\A\internal\Arduino_MachineControl_1.1.1_0b68abd64cd04e7b\Arduino_MachineControl\src/Arduino_MachineControl.h \
- C:\Users\potlo\AppData\Local\T\A\internal\Arduino_MachineControl_1.1.1_0b68abd64cd04e7b\Arduino_MachineControl\src/utility/MAX31865/MAX31865.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/mbed.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/platform/include/platform/mbed_version.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\variants\PORTENTA_H7_M7/mbed_config.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/rtos/include/rtos/rtos.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/rtos/include/rtos/internal/mbed_rtos_storage.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/cmsis/device/rtos/include/mbed_rtx_storage.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Include/rtx_os.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/cmsis/CMSIS_5/CMSIS/RTOS2/Include/cmsis_os2.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Include/rtx_def.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/cmsis/device/RTE/include/RTE_Components.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/cmsis/device/rtos/include/mbed_rtx_conf.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/targets/TARGET_STM/mbed_rtx.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/cmsis/device/mbed_cmsis_conf.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Config/RTX_Config.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/cmsis/device/rtos/include/mbed_rtx_conf.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/rtos/include/rtos/Kernel.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/rtos/include/rtos/mbed_rtos_types.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/rtos/include/rtos/Thread.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/rtos/include/rtos/internal/mbed_rtos1_types.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Include1/cmsis_os.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/rtos/include/rtos/Semaphore.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/rtos/include/rtos/Mutex.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/platform/include/platform/ScopedLock.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/rtos/include/rtos/ThisThread.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/rtos/include/rtos/Mail.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/rtos/include/rtos/Queue.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/platform/include/platform/mbed_error.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/rtos/include/rtos/MemoryPool.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/rtos/include/rtos/EventFlags.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/rtos/include/rtos/ConditionVariable.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/netsocket/include/netsocket/nsapi.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/netsocket/include/netsocket/NetworkInterface.h \
  C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/netsocket/include/netsocket/nsapi_types.h \
  C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/platform/include/platform/mbed_toolchain.h \
  C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/netsocket/include/netsocket/SocketAddress.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/netsocket/include/netsocket/NetworkStack.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/netsocket/include/netsocket/NetworkInterface.h \
  C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/netsocket/include/netsocket/nsapi_types.h \
  C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/platform/include/platform/Callback.h \
  C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/netsocket/include/netsocket/DNS.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/drivers/emac/COMPONENT_WHD/interface/WhdSoftAPInterface.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/netsocket/include/netsocket/EMACInterface.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/netsocket/include/netsocket/nsapi.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/netsocket/include/netsocket/NetworkStack.h \
  C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/netsocket/include/netsocket/EthInterface.h \
  C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/netsocket/include/netsocket/WiFiInterface.h \
  C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/netsocket/include/netsocket/WiFiAccessPoint.h \
@@ -224,6 +197,24 @@ C:\Users\potlo\Desktop\rover_safety_controller\src\LLSketch_build\sketch\LLSketc
  C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/netsocket/include/netsocket/Socket.h \
  C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/netsocket/include/netsocket/UDPSocket.h \
  C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/netsocket/include/netsocket/InternetSocket.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/rtos/include/rtos/Mutex.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/rtos/include/rtos/mbed_rtos_types.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/cmsis/CMSIS_5/CMSIS/RTOS2/Include/cmsis_os2.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/rtos/include/rtos/internal/mbed_rtos1_types.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Include1/cmsis_os.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Include/rtx_os.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Include/rtx_def.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/cmsis/device/RTE/include/RTE_Components.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/cmsis/device/rtos/include/mbed_rtx_conf.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/targets/TARGET_STM/mbed_rtx.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/cmsis/device/mbed_cmsis_conf.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Config/RTX_Config.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/rtos/include/rtos/internal/mbed_rtos_storage.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/cmsis/device/rtos/include/mbed_rtx_storage.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/cmsis/device/rtos/include/mbed_rtx_conf.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/rtos/include/rtos/Kernel.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/platform/include/platform/ScopedLock.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/rtos/include/rtos/EventFlags.h \
  C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/platform/include/platform/mbed_atomic.h \
  C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/platform/include/platform/internal/mbed_atomic_impl.h \
  C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/netsocket/include/netsocket/SocketStats.h \
@@ -268,9 +259,72 @@ C:\Users\potlo\Desktop\rover_safety_controller\src\LLSketch_build\sketch\LLSketc
  C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/netsocket/include/netsocket/DTLSSocket.h \
  C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/netsocket/include/netsocket/DTLSSocketWrapper.h \
  C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/netsocket/include/netsocket/UDPSocket.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/netsocket/include/netsocket/nsapi_ppp.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/platform/include/platform/FileHandle.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/netsocket/include/netsocket/EMAC.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/netsocket/include/netsocket/EMACMemoryManager.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/netsocket/include/netsocket/NetStackMemoryManager.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/netsocket/include/netsocket/OnboardNetworkStack.h \
  C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/netsocket/include/netsocket/NetworkStack.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/netsocket/include/netsocket/L3IP.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/netsocket/include/netsocket/PPP.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/platform/include/platform/FileHandle.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/netsocket/include/netsocket/OnboardNetworkStack.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/drivers/emac/COMPONENT_WHD/interface/whd_emac.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/netsocket/include/netsocket/EMAC.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/netsocket/include/netsocket/EMACInterface.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/netsocket/include/netsocket/WiFiInterface.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/drivers/wifi/COMPONENT_WHD/wifi-host-driver/src/include/whd_int.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/drivers/wifi/COMPONENT_WHD/wifi-host-driver/src/include/whd_thread.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/targets/TARGET_STM/TARGET_STM32H7/TARGET_STM32H747xI/TARGET_PORTENTA_H7/COMPONENT_WHD/interface/cyabs_rtos.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/targets/TARGET_STM/TARGET_STM32H7/TARGET_STM32H747xI/TARGET_PORTENTA_H7/COMPONENT_WHD/interface/cyabs_rtos_impl.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/targets/TARGET_STM/TARGET_STM32H7/TARGET_STM32H747xI/TARGET_PORTENTA_H7/COMPONENT_WHD/interface/cy_result.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/drivers/wifi/COMPONENT_WHD/wifi-host-driver/inc/whd.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/drivers/wifi/COMPONENT_WHD/wifi-host-driver/inc/whd_types.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/targets/TARGET_STM/TARGET_STM32H7/TARGET_STM32H747xI/TARGET_PORTENTA_H7/COMPONENT_WHD/interface/cy_result.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/targets/TARGET_STM/TARGET_STM32H7/TARGET_STM32H747xI/TARGET_PORTENTA_H7/COMPONENT_WHD/port/cyhal_hw_types.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/targets/TARGET_STM/TARGET_STM32H7/TARGET_STM32H747xI/TARGET_PORTENTA_H7/COMPONENT_WHD/whd_config.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/drivers/wifi/COMPONENT_WHD/wifi-host-driver/inc/whd_types.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/drivers/wifi/COMPONENT_WHD/wifi-host-driver/src/include/whd_debug.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/drivers/wifi/COMPONENT_WHD/wifi-host-driver/src/include/whd_sdpcm.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/drivers/wifi/COMPONENT_WHD/wifi-host-driver/src/include/whd_events_int.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/drivers/wifi/COMPONENT_WHD/wifi-host-driver/inc/whd_network_types.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/drivers/wifi/COMPONENT_WHD/wifi-host-driver/inc/whd.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/drivers/wifi/COMPONENT_WHD/wifi-host-driver/src/include/whd_types_int.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/drivers/wifi/COMPONENT_WHD/wifi-host-driver/src/include/whd_cdc_bdc.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/drivers/wifi/COMPONENT_WHD/wifi-host-driver/src/include/whd_chip.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/drivers/wifi/COMPONENT_WHD/wifi-host-driver/src/include/whd_endian.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/drivers/wifi/COMPONENT_WHD/wifi-host-driver/inc/whd_wifi_api.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/drivers/wifi/COMPONENT_WHD/wifi-host-driver/src/include/whd_ap.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/drivers/wifi/COMPONENT_WHD/wifi-host-driver/src/include/whd_debug.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/rtos/include/rtos/Semaphore.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/drivers/emac/COMPONENT_WHD/interface/CyDhcpServer.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/targets/TARGET_STM/TARGET_STM32H7/TARGET_STM32H747xI/TARGET_PORTENTA_H7/COMPONENT_WHD/port/cy_syslib.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/drivers/emac/COMPONENT_WHD/utils/cynetwork_utils.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/netsocket/include/netsocket/UDPSocket.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/rtos/include/rtos/rtos.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/rtos/include/rtos/Thread.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/rtos/include/rtos/ThisThread.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/rtos/include/rtos/Mail.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/rtos/include/rtos/Queue.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/platform/include/platform/mbed_error.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/rtos/include/rtos/MemoryPool.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/rtos/include/rtos/ConditionVariable.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/drivers/emac/COMPONENT_WHD/interface/whd_interface.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/netsocket/include/netsocket/OnboardNetworkStack.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\libraries\WiFi\src\WiFiClient.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\libraries\SocketWrapper\src/MbedClient.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\libraries\SocketWrapper\src/SocketHelpers.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/api/Client.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/netsocket/include/netsocket/TLSSocket.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/netsocket/include/netsocket/TCPSocket.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\libraries\WiFi\src\WiFiServer.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\libraries\SocketWrapper\src/MbedServer.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/mbed.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/platform/include/platform/mbed_version.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\variants\PORTENTA_H7_M7/mbed_config.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/rtos/include/rtos/rtos.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/netsocket/include/netsocket/nsapi.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/netsocket/include/netsocket/nsapi_ppp.h \
  C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/events/include/events/mbed_events.h \
  C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/events/include/events/EventQueue.h \
  C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/events/include/events/equeue.h \
@@ -381,86 +435,8 @@ C:\Users\potlo\Desktop\rover_safety_controller\src\LLSketch_build\sketch\LLSketc
  C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/platform/include/platform/mbed_stats.h \
  C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/platform/include/platform/Stream.h \
  C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/platform/include/platform/FileLike.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\libraries\SPI/SPI.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/api/HardwareSPI.h \
- C:\Users\potlo\AppData\Local\T\A\internal\Arduino_MachineControl_1.1.1_0b68abd64cd04e7b\Arduino_MachineControl\src/utility/THERMOCOUPLE/MAX31855.h \
- C:\Users\potlo\AppData\Local\T\A\internal\ArduinoRS485_1.0.5_a61cd3c6d72c41a3\ArduinoRS485\src/ArduinoRS485.h \
- C:\Users\potlo\AppData\Local\T\A\internal\ArduinoRS485_1.0.5_a61cd3c6d72c41a3\ArduinoRS485\src/RS485.h \
- C:\Users\potlo\AppData\Local\T\A\internal\Arduino_MachineControl_1.1.1_0b68abd64cd04e7b\Arduino_MachineControl\src/utility/QEI/QEI.h \
- C:\Users\potlo\AppData\Local\T\A\internal\Arduino_MachineControl_1.1.1_0b68abd64cd04e7b\Arduino_MachineControl\src/utility/ioexpander/ArduinoIOExpander.h \
- C:\Users\potlo\AppData\Local\T\A\internal\Arduino_MachineControl_1.1.1_0b68abd64cd04e7b\Arduino_MachineControl\src/utility/ioexpander/TCA6424A.h \
- C:\Users\potlo\AppData\Local\T\A\internal\Arduino_MachineControl_1.1.1_0b68abd64cd04e7b\Arduino_MachineControl\src/utility/ioexpander/I2Cdev.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\libraries\Wire/Wire.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/api/HardwareI2C.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/api/deprecated/Print.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/rtos/include/rtos/rtos.h \
- C:\Users\potlo\AppData\Local\T\A\internal\Arduino_MachineControl_1.1.1_0b68abd64cd04e7b\Arduino_MachineControl\src/utility/RTC/PCF8563T.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/platform/include/platform/mbed_mktime.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/pinDefinitions.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\variants\PORTENTA_H7_M7/portenta_info.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\libraries\Ethernet\src/PortentaEthernet.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\libraries\Ethernet\src/Ethernet.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\libraries\SocketWrapper\src/SocketHelpers.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/netsocket/include/netsocket/EthernetInterface.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/netsocket/include/netsocket/nsapi.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/netsocket/include/netsocket/EMACInterface.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/netsocket/include/netsocket/EMAC.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/netsocket/include/netsocket/EMACMemoryManager.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/netsocket/include/netsocket/NetStackMemoryManager.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/netsocket/include/netsocket/OnboardNetworkStack.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/netsocket/include/netsocket/L3IP.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/netsocket/include/netsocket/PPP.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\libraries\Ethernet\src/EthernetClient.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\libraries\SocketWrapper\src/MbedClient.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\libraries\SocketWrapper\src/SocketHelpers.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/api/Client.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/netsocket/include/netsocket/TLSSocket.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/netsocket/include/netsocket/TCPSocket.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\libraries\Ethernet\src/EthernetServer.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\libraries\SocketWrapper\src/MbedServer.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\libraries\Ethernet\src/EthernetUdp.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\libraries\WiFi\src\WiFiUdp.h \
  C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\libraries\SocketWrapper\src/MbedUdp.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\libraries\WiFi\src/WiFi.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\libraries\WiFi\src/utility/wl_definitions.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/drivers/wifi/COMPONENT_WHD/wifi-host-driver/inc/whd_version.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\libraries\WiFi\src/utility/wl_types.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/drivers/emac/COMPONENT_WHD/interface/WhdSoftAPInterface.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/netsocket/include/netsocket/EMACInterface.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/netsocket/include/netsocket/OnboardNetworkStack.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/drivers/emac/COMPONENT_WHD/interface/whd_emac.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/netsocket/include/netsocket/EMAC.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/netsocket/include/netsocket/EMACInterface.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/netsocket/include/netsocket/WiFiInterface.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/drivers/wifi/COMPONENT_WHD/wifi-host-driver/src/include/whd_int.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/drivers/wifi/COMPONENT_WHD/wifi-host-driver/src/include/whd_thread.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/targets/TARGET_STM/TARGET_STM32H7/TARGET_STM32H747xI/TARGET_PORTENTA_H7/COMPONENT_WHD/interface/cyabs_rtos.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/targets/TARGET_STM/TARGET_STM32H7/TARGET_STM32H747xI/TARGET_PORTENTA_H7/COMPONENT_WHD/interface/cyabs_rtos_impl.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/targets/TARGET_STM/TARGET_STM32H7/TARGET_STM32H747xI/TARGET_PORTENTA_H7/COMPONENT_WHD/interface/cy_result.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/drivers/wifi/COMPONENT_WHD/wifi-host-driver/inc/whd.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/drivers/wifi/COMPONENT_WHD/wifi-host-driver/inc/whd_types.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/targets/TARGET_STM/TARGET_STM32H7/TARGET_STM32H747xI/TARGET_PORTENTA_H7/COMPONENT_WHD/interface/cy_result.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/targets/TARGET_STM/TARGET_STM32H7/TARGET_STM32H747xI/TARGET_PORTENTA_H7/COMPONENT_WHD/port/cyhal_hw_types.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/targets/TARGET_STM/TARGET_STM32H7/TARGET_STM32H747xI/TARGET_PORTENTA_H7/COMPONENT_WHD/whd_config.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/drivers/wifi/COMPONENT_WHD/wifi-host-driver/inc/whd_types.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/drivers/wifi/COMPONENT_WHD/wifi-host-driver/src/include/whd_debug.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/drivers/wifi/COMPONENT_WHD/wifi-host-driver/src/include/whd_sdpcm.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/drivers/wifi/COMPONENT_WHD/wifi-host-driver/src/include/whd_events_int.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/drivers/wifi/COMPONENT_WHD/wifi-host-driver/inc/whd_network_types.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/drivers/wifi/COMPONENT_WHD/wifi-host-driver/inc/whd.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/drivers/wifi/COMPONENT_WHD/wifi-host-driver/src/include/whd_types_int.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/drivers/wifi/COMPONENT_WHD/wifi-host-driver/src/include/whd_cdc_bdc.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/drivers/wifi/COMPONENT_WHD/wifi-host-driver/src/include/whd_chip.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/drivers/wifi/COMPONENT_WHD/wifi-host-driver/src/include/whd_endian.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/drivers/wifi/COMPONENT_WHD/wifi-host-driver/inc/whd_wifi_api.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/drivers/wifi/COMPONENT_WHD/wifi-host-driver/src/include/whd_ap.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/drivers/wifi/COMPONENT_WHD/wifi-host-driver/src/include/whd_debug.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/drivers/emac/COMPONENT_WHD/interface/CyDhcpServer.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/targets/TARGET_STM/TARGET_STM32H7/TARGET_STM32H747xI/TARGET_PORTENTA_H7/COMPONENT_WHD/port/cy_syslib.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/drivers/emac/COMPONENT_WHD/utils/cynetwork_utils.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/netsocket/include/netsocket/UDPSocket.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/drivers/emac/COMPONENT_WHD/interface/whd_interface.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/netsocket/include/netsocket/OnboardNetworkStack.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\libraries\WiFi\src/WiFiClient.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\libraries\WiFi\src/WiFi.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\libraries\WiFi\src/WiFiServer.h \
- C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\libraries\WiFi\src/WiFiUdp.h
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/targets/TARGET_STM/TARGET_STM32H7/TARGET_STM32H747xI/TARGET_PORTENTA_H7/COMPONENT_WHD/port/wiced_filesystem.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/targets/TARGET_STM/TARGET_STM32H7/TARGET_STM32H747xI/TARGET_PORTENTA_H7/COMPONENT_WHD/resources/firmware/COMPONENT_4343W_FS/resources.h \
+ C:\Users\potlo\AppData\Local\T\A\internal\arduino_mbed_portenta_3.5.4_6b52e2f35dd4808f\cores\arduino/mbed/connectivity/drivers/wifi/COMPONENT_WHD/wifi-host-driver/resources/resource_imp/wiced_resource.h
