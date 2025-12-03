@@ -14,15 +14,13 @@ struct PLCSharedVarsOutput_t
 PLCSharedVarsOutput_t& PLCOut = (PLCSharedVarsOutput_t&)m_PLCSharedVarsOutputBuf;
 
 
-AlPlc AxelPLC(-749066316);
+AlPlc AxelPLC(-1736701747);
 
 // shared variables can be accessed with PLCIn.varname and PLCOut.varname
 
-#include <WiFi.h>
-
 void setup()
 {
-	// Configure static IP address
+    // Configure static IP address
 	IPAddress ip(192, 168, 88, 11);
 	IPAddress dns(8, 8, 8, 8);
 	IPAddress gateway(192, 168, 88, 1);
@@ -30,9 +28,9 @@ void setup()
 	// If cable is not connected this will block the start of PLC with about 60s of timeout!
 	Ethernet.begin(ip, dns, gateway, subnet);
 
+
 	AxelPLC.Run();
 }
-
 void loop()
 {
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <plcProject caseSensitive="false" extendedIdNames="false" useCustomWorkspace="true" debugMode="false" extcheck="true" SFCControl="false" strictPointerCheck="true" verboseWarningMode="false" iecTypeConversionRules="false" PNContactsOnEachNetwork="false" LocalVarsFBAccess="false" strictEnumsCheck="true" copyWarningThreshold="200" version="2.11" useLD2="true" useXPLCFiles="false" useFBMethods="false" customSortOfProjectTree="false" autoDerefPointers="false">
 	<image>rover_safety_controller.imgx</image>
-	<commSettings>Modbus:247,1000,M#COM:16,38400,N,8,1,H</commSettings>
+	<commSettings>Modbus:247,1000,M#COM:8,38400,N,8,1,H</commSettings>
 	<sources>
 		<main>
 			<resources>
@@ -6550,7 +6550,7 @@ END_PROGRAM
 			</src>
 		</aux>
 		<workspace>
-			<root name="rover_safety_controller" nextID="783">
+			<root name="rover_safety_controller" nextID="831">
 				<GlobalVars name="Global_vars" id="2"/>
 				<Pou name="safety" id="119"/>
 				<Pou name="watchdog" id="158" genHidden="false"/>
@@ -6721,19 +6721,17 @@ END_PROGRAM
 					<Ethernet protocol="" enableMaster="0" enableSlave="1" enableSlaveRtuGateway="0" rtuGatewayDefaultTimeout="100" slavePort="502"/>
 					<SketchContent>// shared variables can be accessed with PLCIn.varname and PLCOut.varname
 
-#include &lt;WiFi.h&gt;
-
 void setup()
 {
-	// Configure static IP address
+    // Configure static IP address
 	IPAddress ip(192, 168, 88, 11);
 	IPAddress dns(8, 8, 8, 8);
 	IPAddress gateway(192, 168, 88, 1);
 	IPAddress subnet(255, 255, 255, 0);
 	// If cable is not connected this will block the start of PLC with about 60s of timeout!
 	Ethernet.begin(ip, dns, gateway, subnet);
-}
 
+}
 void loop()
 {
 
