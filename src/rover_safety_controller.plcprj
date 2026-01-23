@@ -6550,7 +6550,7 @@ END_PROGRAM
 			</src>
 		</aux>
 		<workspace>
-			<root name="rover_safety_controller" nextID="831">
+			<root name="rover_safety_controller" nextID="847">
 				<GlobalVars name="Global_vars" id="2"/>
 				<Pou name="safety" id="119"/>
 				<Pou name="watchdog" id="158" genHidden="false"/>
