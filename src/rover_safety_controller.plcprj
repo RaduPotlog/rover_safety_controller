@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <plcProject caseSensitive="false" extendedIdNames="false" useCustomWorkspace="true" debugMode="false" extcheck="true" SFCControl="false" strictPointerCheck="true" verboseWarningMode="false" iecTypeConversionRules="false" PNContactsOnEachNetwork="false" LocalVarsFBAccess="false" strictEnumsCheck="true" copyWarningThreshold="200" version="2.11" useLD2="true" useXPLCFiles="false" useFBMethods="false" customSortOfProjectTree="false" autoDerefPointers="false">
 	<image>rover_safety_controller.imgx</image>
-	<commSettings>Modbus:247,1000,M#COM:8,38400,N,8,1,H</commSettings>
+	<commSettings>Modbus:247,1000,M#COM:5,38400,N,8,1,H</commSettings>
 	<sources>
 		<main>
 			<resources>
@@ -74,7 +74,7 @@
 			<functions/>
 			<functionBlocks/>
 			<programs>
-				<program name="safety" version="1.0.0" creationDate="1760597863" lastModifiedDate="1761047976" excludeFromBuild="FALSE" excludeFromBuildIfNotDef="">
+				<program name="safety" version="1.0.0" creationDate="1760597863" lastModifiedDate="1773655598" excludeFromBuild="FALSE" excludeFromBuildIfNotDef="">
 					<vars>
 						<localVars>
 							<var name="SR" type="SR"/>
@@ -88,13 +88,14 @@
 					<iecDeclaration active="FALSE"/>
 					<sourceCode type="LD2">
 						<LD2 version="1">
-							<network label="" id="1" nextID="15" comment="" disabled="false" disableCondition="">
+							<network label="" id="1" nextID="16" comment="" disabled="false" disableCondition="">
 								<assignment fromTmpVar="">
 									<input>
 										<and id="12">
 											<contact name="sw_e_stop_motor_driver_fault" type="Closed" id="11"/>
 											<contact name="wdg_fault" type="Normal" id="13"/>
 											<contact name="hw_e_stop_user_btn" type="Closed" id="14"/>
+											<contact name="sw_e_stop_user_button" type="Closed" id="15"/>
 										</and>
 									</input>
 									<outputs>
@@ -6550,7 +6551,7 @@ END_PROGRAM
 			</src>
 		</aux>
 		<workspace>
-			<root name="rover_safety_controller" nextID="847">
+			<root name="rover_safety_controller" nextID="879">
 				<GlobalVars name="Global_vars" id="2"/>
 				<Pou name="safety" id="119"/>
 				<Pou name="watchdog" id="158" genHidden="false"/>
