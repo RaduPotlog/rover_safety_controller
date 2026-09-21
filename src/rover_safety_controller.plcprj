@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <plcProject caseSensitive="false" extendedIdNames="false" useCustomWorkspace="true" debugMode="false" extcheck="true" SFCControl="false" strictPointerCheck="true" verboseWarningMode="false" iecTypeConversionRules="false" PNContactsOnEachNetwork="false" LocalVarsFBAccess="false" strictEnumsCheck="true" copyWarningThreshold="200" version="2.11" useLD2="true" useXPLCFiles="false" useFBMethods="false" customSortOfProjectTree="false" autoDerefPointers="false">
 	<image>rover_safety_controller.imgx</image>
-	<commSettings>Modbus:247,1000,M#COM:5,38400,N,8,1,H</commSettings>
+	<commSettings>Modbus:247,1000,M#COM:4,38400,N,8,1,H</commSettings>
 	<sources>
 		<main>
 			<resources>
@@ -25,8 +25,8 @@
 			</tasks>
 			<globalVars>
 				<group name="Global_vars" excludeFromBuild="FALSE" excludeFromBuildIfNotDef="" version="1.0.0">
-					<var name="motor_coil" type="BOOL">
-						<descr>Mapped to output 0.0</descr>
+					<var name="motor_contactor_drop_cmd" type="BOOL">
+						<descr>Mapped to modbus</descr>
 						<address type="Q" typeVar="X" index="0" subIndex="0"/>
 						<initValue>false</initValue>
 					</var>
@@ -40,16 +40,18 @@
 						<address type="Q" typeVar="X" index="0" subIndex="3"/>
 						<initValue>true</initValue>
 					</var>
-					<var name="wdg_fault" type="BOOL">
+					<var name="wdg_fault_flag" type="BOOL">
+						<descr>Mapped to modbus</descr>
+						<address type="Q" typeVar="X" index="0" subIndex="6"/>
 						<initValue>true</initValue>
 					</var>
-					<var name="sw_e_stop_cpu_wdg_trigger" type="BOOL">
+					<var name="cpu_wdg_trigger" type="BOOL">
 						<descr>Mapped to modbus</descr>
 						<address type="Q" typeVar="X" index="0" subIndex="1"/>
 						<initValue>false</initValue>
 					</var>
 					<var name="hw_e_stop_user_btn" type="BOOL">
-						<descr>Mapped to input 0.0</descr>
+						<descr>Mapped to modbus</descr>
 						<address type="I" typeVar="X" index="0" subIndex="0"/>
 					</var>
 					<var name="sw_e_stop_latch_reset" type="BOOL">
@@ -74,7 +76,7 @@
 			<functions/>
 			<functionBlocks/>
 			<programs>
-				<program name="safety" version="1.0.0" creationDate="1760597863" lastModifiedDate="1773655598" excludeFromBuild="FALSE" excludeFromBuildIfNotDef="">
+				<program name="safety" version="1.0.0" creationDate="1760597863" lastModifiedDate="1789991070" excludeFromBuild="FALSE" excludeFromBuildIfNotDef="">
 					<vars>
 						<localVars>
 							<var name="SR" type="SR"/>
@@ -93,7 +95,7 @@
 									<input>
 										<and id="12">
 											<contact name="sw_e_stop_motor_driver_fault" type="Closed" id="11"/>
-											<contact name="wdg_fault" type="Normal" id="13"/>
+											<contact name="wdg_fault_flag" type="Normal" id="13"/>
 											<contact name="hw_e_stop_user_btn" type="Closed" id="14"/>
 											<contact name="sw_e_stop_user_button" type="Closed" id="15"/>
 										</and>
@@ -165,14 +167,14 @@
 										</and>
 									</input>
 									<outputs>
-										<coil name="motor_coil" type="Normal" id="1"/>
+										<coil name="motor_contactor_drop_cmd" type="Normal" id="1"/>
 									</outputs>
 								</assignment>
 							</network>
 						</LD2>
 					</sourceCode>
 				</program>
-				<program name="watchdog" version="1.0.0" creationDate="1760599056" lastModifiedDate="1760775527" excludeFromBuild="FALSE" excludeFromBuildIfNotDef="">
+				<program name="watchdog" version="1.0.0" creationDate="1760599056" lastModifiedDate="1789991056" excludeFromBuild="FALSE" excludeFromBuildIfNotDef="">
 					<title>Watchdog</title>
 					<descr>Software watchdog triggered by toogle the input</descr>
 					<vars>
@@ -197,7 +199,7 @@
 										<funcBlock name="TON" id="9" instance="TON">
 											<inputs>
 												<pin name="IN" neg="false" type="BOOL">
-													<contact name="sw_e_stop_cpu_wdg_trigger" type="Normal" id="0"/>
+													<contact name="cpu_wdg_trigger" type="Normal" id="0"/>
 												</pin>
 												<pin name="PT" neg="false" type="UDINT">
 													<var name="watchdog_timeout" id="10"/>
@@ -222,7 +224,7 @@
 										<funcBlock name="TOF" id="2" instance="TOF">
 											<inputs>
 												<pin name="IN" neg="false" type="BOOL">
-													<contact name="sw_e_stop_cpu_wdg_trigger" type="Normal" id="0"/>
+													<contact name="cpu_wdg_trigger" type="Normal" id="0"/>
 												</pin>
 												<pin name="PT" neg="false" type="UDINT">
 													<var name="watchdog_timeout" id="3"/>
@@ -250,7 +252,7 @@
 										</or>
 									</input>
 									<outputs>
-										<coil name="wdg_fault" type="Closed" id="1"/>
+										<coil name="wdg_fault_flag" type="Closed" id="1"/>
 									</outputs>
 								</assignment>
 							</network>
@@ -6524,18 +6526,18 @@ END_VAR
 	warningsKiller := sysCfgProgDIOs(0);
 
 	/* ------	CONFIGURATION OF EACH PROGRAMMABLE DIGITAL I/O	--------	*/
-	warningsKiller := sysCfgProgDIO(0, 0);
-	warningsKiller := sysCfgProgDIO(1, 0);
-	warningsKiller := sysCfgProgDIO(2, 0);
-	warningsKiller := sysCfgProgDIO(3, 0);
-	warningsKiller := sysCfgProgDIO(4, 0);
-	warningsKiller := sysCfgProgDIO(5, 0);
-	warningsKiller := sysCfgProgDIO(6, 0);
-	warningsKiller := sysCfgProgDIO(7, 0);
-	warningsKiller := sysCfgProgDIO(8, 0);
-	warningsKiller := sysCfgProgDIO(9, 0);
-	warningsKiller := sysCfgProgDIO(10, 0);
-	warningsKiller := sysCfgProgDIO(11, 0);
+	warningsKiller := sysCfgProgDIO(0, 2);
+	warningsKiller := sysCfgProgDIO(1, 2);
+	warningsKiller := sysCfgProgDIO(2, 2);
+	warningsKiller := sysCfgProgDIO(3, 2);
+	warningsKiller := sysCfgProgDIO(4, 2);
+	warningsKiller := sysCfgProgDIO(5, 2);
+	warningsKiller := sysCfgProgDIO(6, 1);
+	warningsKiller := sysCfgProgDIO(7, 1);
+	warningsKiller := sysCfgProgDIO(8, 1);
+	warningsKiller := sysCfgProgDIO(9, 1);
+	warningsKiller := sysCfgProgDIO(10, 1);
+	warningsKiller := sysCfgProgDIO(11, 1);
 
 	/* ------	GLOBAL CONFIGURATION OF TEMPERATURE PROBES	--------	*/
 	warningsKiller := sysCfgTempProbes(0);
@@ -6551,7 +6553,7 @@ END_PROGRAM
 			</src>
 		</aux>
 		<workspace>
-			<root name="rover_safety_controller" nextID="879">
+			<root name="rover_safety_controller" nextID="943">
 				<GlobalVars name="Global_vars" id="2"/>
 				<Pou name="safety" id="119"/>
 				<Pou name="watchdog" id="158" genHidden="false"/>
@@ -6619,13 +6621,13 @@ END_PROGRAM
 								<label/>
 							</ioMapping>
 							<ioMapping id="1">
-								<label>sw_e_stop_cpu_wdg_trigger</label>
+								<label/>
 							</ioMapping>
 							<ioMapping id="2">
-								<label>sw_e_stop_user_button</label>
+								<label/>
 							</ioMapping>
 							<ioMapping id="3">
-								<label>sw_e_stop_motor_driver_fault</label>
+								<label/>
 							</ioMapping>
 							<ioMapping id="4">
 								<label/>
@@ -6666,40 +6668,40 @@ END_PROGRAM
 							</ioMapping>
 						</ioMappings_AO>
 						<ioMappings_DIO globalConfig="0">
-							<ioMapping id="0" IOType="0">
+							<ioMapping id="0" IOType="2">
 								<label/>
 							</ioMapping>
-							<ioMapping id="1" IOType="0">
+							<ioMapping id="1" IOType="2">
 								<label/>
 							</ioMapping>
-							<ioMapping id="2" IOType="0">
+							<ioMapping id="2" IOType="2">
 								<label/>
 							</ioMapping>
-							<ioMapping id="3" IOType="0">
+							<ioMapping id="3" IOType="2">
 								<label/>
 							</ioMapping>
-							<ioMapping id="4" IOType="0">
+							<ioMapping id="4" IOType="2">
 								<label/>
 							</ioMapping>
-							<ioMapping id="5" IOType="0">
+							<ioMapping id="5" IOType="2">
 								<label/>
 							</ioMapping>
-							<ioMapping id="6" IOType="0">
+							<ioMapping id="6" IOType="1">
 								<label/>
 							</ioMapping>
-							<ioMapping id="7" IOType="0">
+							<ioMapping id="7" IOType="1">
 								<label/>
 							</ioMapping>
-							<ioMapping id="8" IOType="0">
+							<ioMapping id="8" IOType="1">
 								<label/>
 							</ioMapping>
-							<ioMapping id="9" IOType="0">
+							<ioMapping id="9" IOType="1">
 								<label/>
 							</ioMapping>
-							<ioMapping id="10" IOType="0">
+							<ioMapping id="10" IOType="1">
 								<label/>
 							</ioMapping>
-							<ioMapping id="11" IOType="0">
+							<ioMapping id="11" IOType="1">
 								<label/>
 							</ioMapping>
 						</ioMappings_DIO>
